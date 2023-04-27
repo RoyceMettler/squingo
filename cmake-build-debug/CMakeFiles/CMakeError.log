@@ -1,0 +1,21 @@
+Performing C++ SOURCE FILE Test LDFLAG_FSANITIZE_UNDEFINED_OKAY failed with the following output:
+Change Dir: C:/Users/voice/Documents/CS211/final_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0dcf2/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0dcf2.dir\build.make CMakeFiles/cmTC_0dcf2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/voice/Documents/CS211/final_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0dcf2.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe -DLDFLAG_FSANITIZE_UNDEFINED_OKAY  -fsanitize=undefined  -o CMakeFiles\cmTC_0dcf2.dir\src.cxx.obj -c C:\Users\voice\Documents\CS211\final_project\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_0dcf2.exe
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0dcf2.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_0dcf2.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_0dcf2.dir/objects.a @CMakeFiles\cmTC_0dcf2.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -fsanitize=undefined  -Wl,--whole-archive CMakeFiles\cmTC_0dcf2.dir/objects.a -Wl,--no-whole-archive -o cmTC_0dcf2.exe -Wl,--out-implib,libcmTC_0dcf2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0dcf2.dir\linklibs.rsp
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lubsan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_0dcf2.dir\build.make:100: cmTC_0dcf2.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/voice/Documents/CS211/final_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_0dcf2/fast] Error 2
+
+
+Source file was:
+int main(){}
